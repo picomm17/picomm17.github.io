@@ -51,7 +51,11 @@ p {
 ul {
   padding: 0;
   margin: 0;
-  list-style: none;
+  /*list-style: none;*/
+}
+
+.about-description li {
+  font-size: 16px;
 }
 
 a {
@@ -291,7 +295,7 @@ a:active {
 }
 
 .hero-area h1 {
-  color: #fff;
+  color: #a31f34;
   font-size: 60px;
   text-transform: uppercase;
   font-weight: bold;
@@ -311,7 +315,7 @@ a:active {
 
 .hero-area .counter ul li {
   background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
+  color: #a31f34;
   display: inline-block;
   line-height: 25px;
   padding: 25px 28px 20px;
@@ -369,7 +373,11 @@ a:active {
   padding: 10px 50px;
   margin: 0;
   border: 0;
-  max-height: 50px;
+  /*max-height: 50px;*/
+}
+
+.about-ppl {
+  /*margin: 20px 0px;*/
 }
 
 .about-ppl img {
@@ -377,6 +385,18 @@ a:active {
   height: auto;
   max-width: 85%;
   max-height: 85%;
+}
+
+.about-ppl h3 {
+  padding: 5px;
+}
+
+.about-ppl p {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #8A8B8C;
+/*  max-width: 85%;
+  max-height: 85%;*/
 }
 
 .navigation .navbar-brand {
@@ -406,7 +426,7 @@ a:active {
 
 .menu li a {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -442,8 +462,10 @@ a:active {
   text-transform: uppercase;
 }
 
-.service .block p {
-  color: #666;
+.service p {
+  /*color: #666;*/
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*--
@@ -453,7 +475,7 @@ a:active {
   font-size: 26px;
   font-weight: 300;
   line-height: 36px;
-  color: #7e7e7e;
+  color: #a31f34;
   margin-bottom: 20px;
   font-family: 'Droid Serif', serif;
 }
@@ -547,6 +569,11 @@ a:active {
   color: #fff;
 }
 
+.about-description {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 .input-field label {
   color: rgba(237, 28, 36, 0.7);
 }
@@ -598,14 +625,15 @@ footer p a:hover {
   /*border: 1px solid #999;*/
   animation: slide-right 15s forwards 0.5s infinite;
 }
+
 @keyframes slide-right{
   0%, 30% {
-    background-image: url(/images/p2.jpg)
-  }
-  40%, 70% {
     background-image: url(/images/mit.jpg)
   }
+  40%, 70% {
+    background-image: url(/images/vegas.jpg)
+  }
   80%, 100% {
-    background-image: url(/images/lv.jpg)
+    background-image: url(/images/belagio.jpg)
   }
 }
